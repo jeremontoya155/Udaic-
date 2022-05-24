@@ -1,0 +1,85 @@
+@import "../variables/variables";
+
+.title-tarjetas {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 1.3em;
+  margin-top: 0.69em;
+  text-align: center;
+  color: black;
+}
+
+.container-tarjeta {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  .tarjeta {
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 3em;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: $sombraUno;
+    transition: all 400ms ease-out;
+    cursor: default;
+  }
+  .tarjeta:hover {
+    box-shadow: $sombraDos;
+    transform: translateY(-3%);
+  }
+  img {
+    width: 100%;
+    height: 210px;
+  }
+  .contenido-tarjeta {
+    padding: 15px;
+    text-align: center;
+    h3 {
+      margin-bottom: 15px;
+      color: black;
+      text-align: center;
+    }
+    p {
+      line-height: 1.8;
+      color: black;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #071b1f;
+      border: 1px solid black;
+      border-radius: 4px;
+      transition: all 400ms ease;
+      margin-bottom: 5px;
+    }
+    a:hover {
+      background: $colorBoton;
+      color: rgb(13, 9, 148);
+    }
+  }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 768px) {
+  .container-tarjeta {
+    flex-wrap: wrap;
+  }
+
+  .title-tarjetas h1 {
+    font-size: 2em;
+  }
+  .tarjeta {
+    margin: 15px;
+  }
+}

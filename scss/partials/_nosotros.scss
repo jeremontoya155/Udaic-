@@ -1,0 +1,64 @@
+@import "../variables/variables";
+
+.superior {
+  background-image: $gradienteTres;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.superior {
+  span {
+    border: 2px dashed black;
+
+    padding: 4em;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(52, 40, 40);
+    font-size: 1.5em;
+  }
+  span:hover {
+    background-image: $gradienteCuatro;
+  }
+}
+
+.respuestas {
+  text-align: center;
+  h2 {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #arte {
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+
+  #somos {
+    animation: fadeInDown;
+    animation-duration: 6s;
+  }
+
+  #porque {
+    animation: fadeInDown;
+    animation-duration: 10s;
+  }
+
+  .imgNosotros {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .superior span {
+    border: 2px dashed black;
+    width: 100%;
+    height: 100%;
+  }
+}

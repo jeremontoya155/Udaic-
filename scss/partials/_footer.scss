@@ -1,0 +1,28 @@
+@import "../variables/variables";
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  border: 1px solid black;
+  background-image: $gradienteUno;
+  p {
+    text-align: center;
+    font-size: medium;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .imgF {
+    width: 2em;
+    height: auto;
+  }
+}
+
+footer:hover {
+  background-image: $gradienteDos;
+}

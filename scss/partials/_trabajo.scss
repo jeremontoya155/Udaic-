@@ -1,0 +1,26 @@
+@import "../variables/variables";
+.trabajo {
+  text-align: center;
+  h2 {
+    font-size: 2em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-top: 1.1em;
+    margin-bottom: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    a {
+      text-decoration: none;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+    }
+    a:hover {
+      font-size: 3em;
+      color: $colorBoton;
+    }
+  }
+}

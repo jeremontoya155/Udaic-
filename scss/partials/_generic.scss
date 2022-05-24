@@ -1,0 +1,61 @@
+@import "../variables/variables";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+  animation: lista 4s infinite;
+}
+
+.mover {
+  font-size: 4em;
+  animation: fadeIn;
+  animation-duration: 4s;
+  font-family: "Courier New", Courier, monospace;
+}
+.aviso {
+  display: flex;
+  justify-content: center;
+}
+
+.centrar {
+  text-align: center;
+
+  font-size: 3.5em;
+}
+
+.proximas {
+  p {
+    font-size: 1.4em;
+  }
+}
+nav {
+  background-image: $gradienteNav;
+}
+
+@media only screen and (max-width: 300px) {
+  .aviso {
+    img {
+      width: 150px;
+      height: 80px;
+    }
+  }
+
+  .parallax {
+    font-size: 3em;
+  }
+
+  .title-tarjetas {
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .centrar {
+    font-size: 2em;
+  }
+}

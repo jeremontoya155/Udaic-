@@ -1,0 +1,25 @@
+@import "partials/tarjetas";
+@import "partials/nosotros";
+@import "partials/generic";
+@import "partials/trabajo";
+@import "partials/footer";
+@import "variables/variables";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgba(234, 223, 205, 0.881);
+}
+
+.parallax {
+  background-image: url("../images/textura.jpg");
+  height: 25vh;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 6em;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio Web UDAIC formulario ingreso" />
+    <meta name="keywords" content="Asociaciones artesania grupos" />
+    <meta name="author" content="Jeremias Montoya" />
+    <meta name="copyright" content="Jeremias Montoya" />
+    <meta name="robots" content="index,follow" />
+
+    <title>Ingresa</title>
+    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/navBar.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rubros.html">Rubros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="ingresa.html">Ingresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabajos.html">Trabajos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col px-0">
+          <div
+            class="parallax d-flex justify-content-center align-items-center"
+          >
+            UDAIC
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="proximas">
+      <div class="title-tarjetas">
+        <h1 class="mover">INGRESA</h1>
+      </div>
+
+      <form
+        class="mx-4 my-4"
+        enctype="text/plain"
+        action="mailto:jeremontoya1555@gmail.com"
+        method="post"
+      >
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input
+                type="text"
+                id="form6Example1"
+                class="form-control"
+                placeholder="Ingrese su nombre"
+              />
+              <label class="form-label" for="form6Example1" value="nombre"
+                >Nombre</label
+              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input
+                type="text"
+                id="form6Example2"
+                class="form-control"
+                placeholder="Ingrese su apellido"
+              />
+              <label class="form-label" for="form6Example2">Apellido</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="form6Example3"
+            class="form-control"
+            placeholder="Ingrese su especialidad"
+          />
+          <label class="form-label" for="form6Example3">Especialidad</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="form6Example4"
+            class="form-control"
+            placeholder="Ingrese su disponibilidad(Mañana/Tarde/Noche)"
+          />
+          <label class="form-label" for="form6Example4"
+            >Horario disponible</label
+          >
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="email"
+            id="form6Example5"
+            class="form-control"
+            placeholder="Ingrese su email"
+          />
+          <label class="form-label" for="form6Example5">Email</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="number"
+            id="form6Example6"
+            class="form-control"
+            placeholder="Ingrese su numero telefonico"
+          />
+          <label class="form-label" for="form6Example6">Telefono</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <textarea
+            class="form-control"
+            id="form6Example7"
+            rows="4"
+            placeholder="Ingrese algo sobre usted"
+          ></textarea>
+          <label class="form-label" for="form6Example7">Sobre vos</label>
+        </div>
+
+        <button
+          type="submit"
+          value="send"
+          class="btn btn-warning btn-block mb-4"
+          id="enviarCorreo"
+        >
+          <a href="#">Enviar</a>
+        </button>
+      </form>
+      <script>
+        let btnEnvio = document.getElementById("enviarCorreo");
+        btnEnvio.addEventListener("click", function (e) {
+          e.preventDefault();
+          let v1 = document.getElementById("form6Example1").value;
+          let v2 = document.getElementById("form6Example2").value;
+          let v3 = document.getElementById("form6Example3").value;
+          let v4 = document.getElementById("form6Example4").value;
+          let v5 = document.getElementById("form6Example5").value;
+          let v6 = document.getElementById("form6Example6").value;
+          let v7 = document.getElementById("form6Example7").value;
+          window.location.href = `mailto:jeremontoya1555@gmail.com?&body=Nombre%3A${v1}%0Apellido%3A${v2}%0AEspecialidad%3A${v3}%0AHorario%3A${v4}%0AEmail%3A${v5}%0ATelefono%3A${v6}%0ASoy:%3A${v7}`;
+        });
+      </script>
+    </main>
+
+    <footer>
+      <p>NUESTRAS REDES</p>
+      <div>
+        <a href="https://www.instagram.com/udaic.cordoba/?hl=es-la"
+          ><img src="../images/instagram.svg" alt="instagram" class="imgF"
+        /></a>
+        <a href="https://www.facebook.com/udaicartesaniacordoba"
+          ><img src="../images/facebook.svg" alt="facebook" class="imgF"
+        /></a>
+        <a href="mailto:udaicartesaniaurbana@outlook.com"
+          ><img src="../images/mail.svg" alt="mail" class="imgF"
+        /></a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
